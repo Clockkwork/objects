@@ -15,5 +15,4 @@ public class nameBook {
     public String getNameBook2() {
         return this.nameBook2;
     }
-
 }

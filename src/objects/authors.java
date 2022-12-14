@@ -17,6 +17,5 @@ public class authors {
     public String getNameAuhtor2() {
         return this.author2;
     }
-
     }
 
