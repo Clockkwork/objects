@@ -4,9 +4,9 @@ package objects;
 public class Author {
     private String name;
 
-     private String surname;
+    private String surname;
 
-     private String patronymic;
+    private String patronymic;
 
 
     public Author(String name, String surname, String patronymic) {
@@ -27,8 +27,5 @@ public class Author {
     public String getPatronymic() {
         return this.patronymic;
     }
-
-
-
-    }
+}
 

@@ -1,14 +1,14 @@
 package objects;
-
 public class Book {
     private String title;
-
     private int release;
 
-    public  Book (String title,int release){
+    public Book(String title, int release) {
         this.title = title;
         this.release = release;
     }
+
+
     public String getTitle() {
         return this.title;
     }
@@ -20,7 +20,36 @@ public class Book {
     public void setRelease(int release) {
         this.release = release;
     }
+
+    public static class Author {
+        public String name;
+
+        public String surname;
+
+        public String patronymic;
+
+
+        public Author(String name, String surname, String patronymic) {
+
+            this.name = name;
+            this.surname = surname;
+            this.patronymic = patronymic;
+        }
+
+        public String getName() {
+            return this.name;
+        }
+
+        public String getSurname() {
+            return this.surname;
+        }
+
+        public String getPatronymic() {
+            return this.patronymic;
+        }
+    }
 }
+
 
 
 
