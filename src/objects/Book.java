@@ -1,11 +1,14 @@
 package objects;
 public class Book {
-    private String title;
-    private int release;
+    private final String title;
+    private  int release;
+    private final Author author;
 
-    public Book(String title, int release) {
+
+    public Book(String title, int release,Author author) {
         this.title = title;
         this.release = release;
+        this.author = author;
     }
 
 
@@ -21,32 +24,9 @@ public class Book {
         this.release = release;
     }
 
-    public static class Author {
-        public String name;
-
-        public String surname;
-
-        public String patronymic;
-
-
-        public Author(String name, String surname, String patronymic) {
-
-            this.name = name;
-            this.surname = surname;
-            this.patronymic = patronymic;
-        }
-
-        public String getName() {
-            return this.name;
-        }
-
-        public String getSurname() {
-            return this.surname;
-        }
-
-        public String getPatronymic() {
-            return this.patronymic;
-        }
+    @Override
+    public String toString() {
+        return "Название: " + title + " год публикации: " + release + " автор " + author;
     }
 }
 
