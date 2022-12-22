@@ -1,14 +1,17 @@
 package objects;
-
 public class Book {
-    private String title;
+    private final String title;
+    private  int release;
+    private final Author author;
 
-    private int release;
 
-    public  Book (String title,int release){
+    public Book(String title, int release,Author author) {
         this.title = title;
         this.release = release;
+        this.author = author;
     }
+
+
     public String getTitle() {
         return this.title;
     }
@@ -20,7 +23,13 @@ public class Book {
     public void setRelease(int release) {
         this.release = release;
     }
+
+    @Override
+    public String toString() {
+        return "Название: " + title + " год публикации: " + release + " автор " + author;
+    }
 }
+
 
 
 

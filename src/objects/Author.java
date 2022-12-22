@@ -1,34 +1,18 @@
 package objects;
 
-
 public class Author {
-    private String name;
+    private final String fullName;
 
-     private String surname;
-
-     private String patronymic;
-
-
-    public Author(String name, String surname, String patronymic) {
-
-        this.name = name;
-        this.surname = surname;
-        this.patronymic = patronymic;
+    public Author(String fullName) {
+        this.fullName = fullName;
     }
 
-    public String getName() {
-        return this.name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public String getSurname() {
-        return this.surname;
+    @Override
+    public String toString() {
+        return fullName;
     }
-
-    public String getPatronymic() {
-        return this.patronymic;
-    }
-
-
-
-    }
-
+}
